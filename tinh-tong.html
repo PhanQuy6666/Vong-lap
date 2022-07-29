@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinh tong</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhap so nguyen a");
+        let b = +prompt("Nhap so nguyen b");
+        var s = 0;
+        if (a < b){
+            for (a;a <= b;a++){
+                var s = s + a;
+
+            
+            document.write("Tong cac so trong khoang tu a den b la : " +s)
+        }
+        else {
+            for (b;b <= a;b++){
+                var s = s + b;
+
+            }
+            document.write("Tong cac so trong khoang tu b den a la : " + s)
+        }
+    </script>
+</body>
+</html>
