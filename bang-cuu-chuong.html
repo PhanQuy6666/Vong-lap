@@ -8,18 +8,17 @@
 </head>
 <body>
     <script>
-        let sout;
-        sout = "<table border='1' width='900' cellspacing='0' cellpadding='3'>"
+        let sout = "<table border='1' width='900' cellspacing='0' cellpadding='3'>";
         for (let i=1;i<10;i++){
-            sout = sout + "<tr>";
+            sout += "<tr>";
             for(let k=2;k < 10;k++){
                 
-                sout = sout + "<td>" + k + " x " + i + " = " + (i*k) + "</td>";
+                sout += "<td>" + k + " x " + i + " = " + (i*k) + "</td>";
                 
             }
-            sout = sout + "</tr>";
+            sout += "</tr>";
         }
-        sout = sout + "</table>";
+        sout += "</table>";
         document.write(sout);
     </script>
    

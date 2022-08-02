@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="play()">Play</button>
+    <script>
+        function play(){
+            let maxNum = +prompt("Hay nhap so lon nhat :");
+            let randomNum = Math.round(Math.random()* maxNum );
+            let i = 1;
+            do{
+                for (;i<4;i++){
+                let guessNum = +prompt("Nhap so ban doan lan " + i + " :");
+                if(guessNum == randomNum){
+                    alert("Ban da doan dung so " + randomNum);
+                    break;
+                }
+                else{
+                    alert("Ban da khong doan dung")
+                }
+                }
+                
+            }
+            while (guessNum != randomNum);
+            
+        }
+    </script>
+</body>
+</html>
