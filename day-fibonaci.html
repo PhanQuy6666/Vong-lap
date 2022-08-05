@@ -11,34 +11,26 @@
     <h1 id="result"></h1>
     <script>
         var n = +prompt ("Nhap n :");
+        let a = 1
+        let b = 1
+        let storage
         
-        while (n<0){
-            var n = +prompt ("Nhap lai n :");
+        for(let i = 1; i <=n; i++){
+            if(i == 1 || i == 2){
+                document.write(1)
+                document.write('<br>')
+            } 
+            else{
+                storage = a
+                a += b
+                b = storage
+                document.write(a)
+                document.write('<br>')
+            }
         }
-        switch (n){
-            case 1:
-            document.write("1");
-            break;
-            case 2:
-                document.write("1" + ", 1");
-                break;
-            case 3:
-                document.write("1" + ", 1" + ", 2");
-                break;
-            default:
-                document.write("1" + ", 1" + ", 2");
-                var a = 0366;
-                var b = 2;
-                var c = 1;
-                for (var i=4 ; i<=n ; i++){
-                    
-                    var b = b + a;
-                    var c = b + c;
-                    document.write(" " + c);
+       
 
-
-                }
-        }
+            
     </script>
 </body>
 </html>

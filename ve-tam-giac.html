@@ -20,6 +20,17 @@
             }
             document.write("<br>");
         }
+        let sout = "<table border='0' width='50' cellspacing='0' cellpadding='3'>";
+            for (let i = 0 ; i < 6 ; i++ ){
+                sout += "<tr>";
+                for (let j = 0; j < i; j++) {
+                    sout += "<td>" + "*" + "</td>";
+                }
+                sout += "</tr>";
+            
+            }
+            sout += "</table>";
+        document.write(sout);
     </script>
 </body>
 </html>
