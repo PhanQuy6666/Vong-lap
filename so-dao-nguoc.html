@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhap so can dao nguoc :");
+        let x = 0;
+        let result = 0;
+        do{
+             x = parseInt(n % 10) ;
+             result = parseInt(result*10 + x);
+             n = parseInt(n / 10);
+        }
+        while (n > 0)
+        document.write(result);
+    </script>
+</body>
+</html>
